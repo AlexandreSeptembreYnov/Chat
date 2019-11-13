@@ -30,7 +30,7 @@ fs.readFile('./index.html', 'utf8', (err, data) => {
 
         io.on('connection', client => {
 
-            client.on('firstConnection', () => client.emit('message', messages));
+            client.on('firstConnection', () => console.log("yesss"));
 
 
 

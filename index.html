@@ -15,7 +15,7 @@
     </style>
     <script src="/socket.io/socket.io.js"></script>
 </head>
-<body>
+<body onkeypress="addmesage(event)">
 <div id="text">
 
 </div>
@@ -29,7 +29,7 @@
     const affiche = document.getElementById('text');
     const socket=io();
     socket.emit("firstConnection","Hello Socket Serveur !");
-    socket.on("message", data => affiche.innerHTML = data);
+    socket.on("message", data => affiche.innerHTML += "<ul>" + data[data.length - 1] + "</ul>");
 
     function addmesage(event) {
         if(event.keyCode !== 13) {
