@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/AlexandreSeptembreYnov/Chat/issues"
   },
-  "homepage": "https://github.com/AlexandreSeptembreYnov/Chat#readme"
+  "homepage": "https://github.com/AlexandreSeptembreYnov/Chat#readme",
+  "dependencies": {
+    "socket.io": "^2.3.0"
+  }
 }
